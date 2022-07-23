@@ -7,8 +7,96 @@
   border:0.5px solid rgb(0, 0, 0, 0.5);
 }
 
+.homebody {
+ width: 70%;
+ margin: auto;
+}
+
 @media screen and (max-width: 1024px){
   .container {
     width: var(--container-width-md);
+  }
+}
+
+@keyframes wave-animation {
+  0%  { transform: rotate( 0.0deg) }
+  15% { transform: rotate(14.0deg) } 
+  30% { transform: rotate(-8.0deg) }
+  40% { transform: rotate(14.0deg) }
+  50% { transform: rotate(-4.0deg) }
+  60% { transform: rotate(10.0deg) }
+  70% { transform: rotate( 0.0deg) } 
+ 100% { transform: rotate( 0.0deg) }
+}
+
+.waving-hand {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+.purpletext {
+  color: rgba(234, 150, 226, 0.979);
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+.intro {
+  display: flex;
+}
+
+
+.introtext {
+  margin: auto;
+  width: 60%;
+  /* border: 3px solid black */
+}
+
+.intropng {
+  width: 40%;
+  /* border: 3px solid black; */
+  margin: auto;
+}
+
+.introtext h2{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+@keyframes turnOne {
+  0% {transform: rotate(0deg);}
+  10% {transform: rotate(-10deg);}
+  30% {transform: rotate(370deg);}
+  40% {transform: rotate(360deg);}
+  100% {transform: rotate(360deg);}
+}
+
+.homepng{
+  animation-name: turnOne;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(.72,-0.02,.33,.95);
+}
+
+
+@media screen and (max-width: 600px){
+  .homebody {
+    width: 100%;
+    text-align: center;
+  }
+
+  .intro {
+    display: block;
+  }
+
+  .introtext {
+    width: 90%;
+  }
+
+  .intropng {
+    width: 90%;
+    margin-bottom: 50px;
   }
 }

@@ -5,6 +5,7 @@ import About from './components/pages/About';
 import Blog from './components/pages/Blog';
 import Contact from './components/pages/Contact';
 import TopHeader from './components/TopHeader';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -42,7 +43,7 @@ function App() {
                         <Route path='/contact' element={<Contact />}></Route>
                         <Route path='/resume' element={<Blog />}></Route>
                     </Routes>
-                    {/* <Footer /> */}
+                    <Footer/>
                 </div>
             </div>
         </Router>

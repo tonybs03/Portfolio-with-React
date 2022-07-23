@@ -6,15 +6,18 @@ import home from '../assets/images/home.png'
 export default function Home() {
   return (
     <div class="homemain">
-      <div style={{ width: '70%', margin: 'auto' }} >
-        <div class='row'>
-          <h1>Let Me Introduce Myself!</h1>
-          <div class='col-7' style={{ marginTop: '30px' }}>
-            <h2>I am a web developer in training...</h2>
-            <h2>I am also an Astrophysics researcher in training...</h2>
-            <h2>I am also an Astrophysics researcher in training...</h2>
+      <div class="homebody">
+        <h1 style={{ fontWeight: 'bolder', marginTop: '100px' }}>Let Me Introduce Myself!!!<span class="waving-hand">👋</span></h1>
+        <div class='intro'>
+          <div class='introtext'>
+            <h2>I am a <span class='purpletext'>Web Developer</span> in training...</h2>
+            <h2>I am an <span class='purpletext'>Astrophysics Researcher</span> at UofT...</h2>
+            <h2>I am the co-founder of the <span class='purpletext'>CareToGo</span> platform...</h2>
+            <h2>My favorite thing is <span class='purpletext'>Front-End</span> product design...</h2>
           </div>
-          <img class='col-5' src={home} alt='placeholder' />
+          <div class='intropng'>
+            <img class='homepng' src={home} alt='placeholder' />
+          </div>   
         </div>
       </div>
     </div>

@@ -22,6 +22,12 @@ const Wrapper = styled.span`
   background-position: 0%;
 `
 
+export default function TextAnimation() {
+  return <Wrapper>Hi... I'm Tony</Wrapper>
+}
+
+
+
 // const typing = keyframes`
 //   from { width: 0 }
 //   to { width: 100% }
@@ -47,25 +53,5 @@ const Wrapper = styled.span`
  
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-export default function TextAnimation() {
-    return <Wrapper>Hi... I'm Tony</Wrapper>
-}
 
 

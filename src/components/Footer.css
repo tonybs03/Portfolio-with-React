@@ -1,0 +1,61 @@
+.footermain {
+  background-color:rgb(0, 0, 0, 0.7);
+  min-height: 100px;
+  margin: auto;
+  display: flex;
+}
+
+.footerbody {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: auto;
+}
+
+.footer-a {
+  text-align: center;
+  width: 33%;
+  margin: auto;
+}
+
+.footer-b {
+  text-align: center;
+  width: 33%;
+  margin: auto;
+}
+
+.footer-c {
+  /* border: 3px solid black; */
+  text-align: center;
+  width: 33%;
+  margin: auto;
+}
+
+.github {
+  font-size: 36px;
+  margin-right: 36px;
+}
+
+.linkedin {
+  font-size: 42px;
+  margin-right: 36px;
+}
+
+.facebook {
+  font-size: 39px;
+}
+
+@media screen and (max-width: 600px){
+  .footerbody {
+    display:block;
+  }
+  .footer-a {
+    width: 90%;
+  }
+  .footer-b {
+    width: 90%;
+  }
+  .footer-c {
+    width: 90%;
+  }
+}
