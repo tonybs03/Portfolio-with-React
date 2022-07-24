@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap");
+
+.contactmain {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  min-height:500px;
+  background-color: rgb(0, 0, 0, 0.5);
+  z-index: 100;
+  border: 1px solid rgb(0, 0, 0, 0.5);
+}
+
+.contactbody {
+  border-radius: 10px;
+  padding: 30px;
+  background-color: rgb(0, 0, 0, 0.5);
+  width: 50%;
+  margin: auto;
+}
+
+
+.name-form {
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.email-form {
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.message-form * {
+  vertical-align: middle;
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.btn-container {
+  min-height: 70px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 30px;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.contact-form label {
+  text-align: left;
+  font-size: 21px;
+  width: 120px;
+}
+
+
+input[type="text"], input[type="email"], textarea[type="message"] {
+  font-weight: bolder;
+  color: #8e566d;
+  background: transparent;
+  padding: 10px;
+  border: 2px solid #8e566d;
+  border-radius: 10px;
+  height: 48px;
+  width: 400px;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+textarea[type="message"] {
+  height: 72px;
+}
+
+input:active, input:focus, input:hover, textarea:active, textarea:focus, textarea:hover {
+  box-shadow: 0px 0px 10px rgb(136, 136, 222);
+  border: 3px solid rgb(99, 144, 203);
+}
+
+input[type="text"], input[type="email"] {
+  font-size: 24px;
+}
+
+.submitbtn {
+  background-color: #8e566d;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  padding: 10px 12px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.submitbtn:hover {
+  background-color: #8e566d;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  padding: 5px 12px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 21px;
+  box-shadow: 0px 0px 10px rgb(136, 136, 222);
+  border: 3px solid rgb(99, 144, 203);
+}
+
+
+.purpletextsmall {
+  color: rgba(234, 150, 226, 0.979);
+  font-size: 27px;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 1024px){
+  .aboutmemain {
+    text-align: center;
+  }
+
+  .aboutmebody {
+    width: 90%;
+  }
+  .aboutmetext {
+    align-items: center;
+    width: 100%;
+    padding-right: 0px;
+  }
+  .aboutmeimg {
+    margin-bottom: 50px;
+    width: 50%;
+  }
+  .aboutmesection {
+    display: block;
+  }
+}

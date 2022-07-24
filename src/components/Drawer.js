@@ -39,7 +39,7 @@ export default function TemporaryDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {['Home', 'About Me', 'Projects', 'Contact'].map((page, index) => (
+        {['Home', 'About Me', 'Portfolio', 'Contact'].map((page, index) => (
           <ListItem key={page} disablePadding >
             <ListItemButton>
               <ListItemIcon>

@@ -1,22 +1,91 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useForm, ValidationError } from "@formspree/react";
+import { validateEmail } from '../utils/helpers';
+import "./Contact.css"
+
 
 export default function Contact() {
+  const [state, handleSubmit] = useForm("xdobqyap");
+
+  const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const { name, email, message } = formState;
+
+
+  function refresh() {
+    window.location.reload();
+  }
+
+
+  if (state.succeeded) {
+    return (
+      <div  class='contactmain'>
+        <p>Thanks for reaching out!</p>
+        <button class='submitbtn' onClick={refresh}>Go back to Contact Form</button>
+      </div>
+    );
+  }
+
+
+  const handleChange = (e) => {
+    if (e.target.name === 'email') {
+      const isValid = validateEmail(e.target.value);
+      if (!isValid) {
+        setErrorMessage('Your email is invalid.');
+      } else {
+        setErrorMessage('');
+      }
+    } else {
+      if (!e.target.value.length) {
+        setErrorMessage(`Your ${e.target.name} is required.`);
+      } else {
+        setErrorMessage('');
+      }
+    }
+    if (!errorMessage) {
+      setFormState({ ...formState, [e.target.name]: e.target.value });
+    }
+  };
+
   return (
-    <div style={{width: '95%', margin:'auto'}}>
-      <h1>Contact Page</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
+    <div class='contactmain'>
+      <div class="contactbody">
+        <h1>Contact Me</h1>
+        <hr />
+        <form class="contact-form" onSubmit={handleSubmit}>
+          <div class="name-form">
+            <label htmlFor="name">Name: </label>
+            <input type="text" name="name" defaultValue={name} onBlur={handleChange} required />
+          </div>
+
+          <div class="email-form">
+            <label htmlFor="email">Email: </label>
+            <input type="email" name="email" defaultValue={email} onBlur={handleChange} required />
+            <ValidationError prefix="Email" field="email" errors={state.errors} />
+          </div>
+
+          <div class="message-form">
+            <label htmlFor="message">Message: </label>
+            <textarea type="message" name="message" defaultValue={message} onBlur={handleChange} required />
+          </div>
+
+          {errorMessage && (
+            <div>
+              <p>{errorMessage}</p>
+            </div>
+          )}
+
+          <div class="btn-container">
+            <button class="submitbtn" type="submit">Submit</button>
+          </div>
+
+        </form>
+      </div>
     </div>
   );
 }
+
+
+
