@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Portfolio from './components/pages/Portfolio';
+import Resume from './components/pages/Resume';
 import Contact from './components/pages/Contact';
 import TopHeader from './components/TopHeader';
 import Footer from './components/Footer';
@@ -42,7 +43,7 @@ function App() {
                         <Route path='/About%20Me' element={<About />} ></Route>
                         <Route path='/Portfolio' element={<Portfolio />} ></Route>
                         <Route path='/Contact' element={<Contact />}></Route>
-                        {/* <Route path='/resume' element={<Blog />}></Route> */}
+                        <Route path='/Resume' element={<Resume />}></Route>
                     </Routes>
                     <Footer/>
                 </div>

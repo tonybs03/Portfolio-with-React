@@ -8,6 +8,10 @@
   background-color: rgb(0, 0, 0, 0.5);
   z-index: 100;
   border: 1px solid rgb(0, 0, 0, 0.5);
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .contactbody {
@@ -16,15 +20,19 @@
   background-color: rgb(0, 0, 0, 0.5);
   width: 50%;
   margin: auto;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 
-.name-form {
+.name-form * {
   display: inline-block;
   margin-top: 30px;
 }
 
-.email-form {
+.email-form * {
   display: inline-block;
   margin-top: 30px;
 }
@@ -118,24 +126,23 @@ input[type="text"], input[type="email"] {
   font-weight: bolder;
 }
 
-@media screen and (max-width: 1024px){
-  .aboutmemain {
-    text-align: center;
-  }
-
-  .aboutmebody {
+@media screen and (max-width: 1200px){
+  .contactbody {
     width: 90%;
   }
-  .aboutmetext {
-    align-items: center;
-    width: 100%;
-    padding-right: 0px;
+}
+
+@media screen and (max-width: 720px){
+  .contactbody {
+    width: 90%;
   }
-  .aboutmeimg {
-    margin-bottom: 50px;
-    width: 50%;
+  .contact-form label {
+    text-align: center;
   }
-  .aboutmesection {
-    display: block;
+  .message-form * {
+    margin-bottom: 0px;
   }
+  input[type="text"], input[type="email"], textarea[type="message"] {
+    width: 80%;
+ }
 }

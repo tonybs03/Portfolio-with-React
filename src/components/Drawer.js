@@ -39,13 +39,13 @@ export default function TemporaryDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {['Home', 'About Me', 'Portfolio', 'Contact'].map((page, index) => (
+        {['Home', 'About Me', 'Portfolio', 'Resume', 'Contact'].map((page, index) => (
           <ListItem key={page} disablePadding >
             <ListItemButton>
               <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
               </ListItemIcon>
-              <Link to={page}> <ListItemText primary={page} primaryTypographyProps={{ style: { fontFamily: 'Rajdhani', fontSize: "24px" } }} /> </Link>
+              <Link to={page}> <ListItemText primary={page} primaryTypographyProps={{ style: { fontFamily: 'Rajdhani', fontSize: "24px", fontWeight: "bolder" } }} /> </Link>
             </ListItemButton>
           </ListItem>
         ))}
