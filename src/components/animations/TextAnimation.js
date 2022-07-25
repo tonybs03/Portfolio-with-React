@@ -70,7 +70,16 @@ const funcs = {
                     <span key={index}>{item}</span>
                 ))}
                </Wrapper>
-    }
+    },
+
+    TextAnimationR() {
+      const textArray = "Resume".split("")
+      return <Wrapper>
+              {textArray.map((item, index) => (
+                  <span key={index}>{item}</span>
+              ))}
+             </Wrapper>
+  }
 }
 
 export default funcs

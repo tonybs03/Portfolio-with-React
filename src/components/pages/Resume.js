@@ -1,36 +1,54 @@
 import React from 'react';
-import funcs from '../animations/TextAnimation-AM';
+import { useState } from 'react';
+import funcs from '../animations/TextAnimation';
 import './Resume.css';
-import PP from '../assets/images/PP.jpg'
-
+import tonyfan from '../assets/pdf/tonyfan.pdf'
+import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
+import { Link } from 'react-router-dom'
 
 export default function Resume() {
+  const [numPages, setNumPages] = useState(null);
+  const [pageNumber, setPageNumber] = useState(1);
+
+  const onDocumentLoadSuccess = ({ numPages }) => {
+    setNumPages(numPages);
+  };
+
+  const goToPrevPage = () =>
+    setPageNumber(pageNumber - 1 <= 1 ? 1 : pageNumber - 1);
+
+  const goToNextPage = () =>
+    setPageNumber(
+      pageNumber + 1 >= numPages ? numPages : pageNumber + 1,
+    );
+
   return (
-    <div class="aboutmemain">
-      <div class="aboutmebody">
-        <div class="aboutmetitle">
-          <funcs.TextAnimationA /> <funcs.TextAnimationM />
+    <div class="resumemain">
+      <div class="resumebody">
+        <div class="resumetitle">
+          <funcs.TextAnimationR />
         </div>
-        <div class="aboutmesection">
-          <div class="aboutmetext">
-            <p>Hi there, my name is Tony. I am from Jiaxing, China and currently located in Toronto, Canada. I speak English as well as Mandarin, and my
-              Chinese name is 范俊晶 (Fan Junjing). I spent the first 15 years of my life in China, and moved to Toronto
-              in the year 2012. I graduated from University of Toronto with a major specialist degree in Physics, and I
-              went on to do Astrophysics research work afterwards. </p>
-
-            <p>During my academic years, I have learned to professonalize my skills in Python for data analysis,
-              and in LaTeX for efficient communication. Now, I am taking my coding skill to another level by learning to become
-              a full stack web/app developer. I am especially interested in Fron-End desgining. </p>
-
-            <p>Apart from my career, I am a big Comic Book nerd, and a big video game player. I am a very adventurous
-              person, especially when it comes to food and travelling. A quote that I live by is <span class='purpletextsmall'>
-                "Love all, trust a few, do wrong to none..."</span> by Shakespeare.</p>
-          </div>
-          <div class="aboutmeimg">
-            <img class='aboutmejpg' src={PP} alt='placeholder' />
-            <div class="overlay">
-              <div class="text">Me at a friend's wedding...</div>
+        <div class="resumesection">
+          <div class="resumePDF">
+            <nav class="navPDF">
+              <div style={{ marginTop: "10px", marginBottom: "10px" }}>
+                <Link to={tonyfan} target="_blank" download> <button class="downloadbtn" type="submit">Download CV</button> </Link>
+              </div>
+              <hr />
+              <button class="downloadbtn" onClick={goToPrevPage}>Prev</button>
+              <button class="downloadbtn" onClick={goToNextPage}>Next</button>
+              <p>
+                Page {pageNumber} of {numPages}
+              </p>
+            </nav>
+            <div class="displayPDF">
+              <Document file={tonyfan} onLoadSuccess={onDocumentLoadSuccess}>
+                <Page pageNumber={pageNumber} />
+              </Document>
             </div>
+          </div>
+          <div class="skillssection">
+            dasda
           </div>
         </div>
       </div>

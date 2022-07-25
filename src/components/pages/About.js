@@ -1,5 +1,5 @@
 import React from 'react';
-import funcs from '../animations/TextAnimation-AM';
+import funcs from '../animations/TextAnimation';
 import './About.css';
 import PP from '../assets/images/PP.jpg'
 
