@@ -50,7 +50,9 @@ const Wrapper = styled.span`
   span:nth-child(8) {
     animation-delay: 0.8s;
   }
-
+  span:nth-child(9) {
+    animation-delay: 1.0s;
+  }
 `
 
 const funcs = {
@@ -79,7 +81,16 @@ const funcs = {
                   <span key={index}>{item}</span>
               ))}
              </Wrapper>
-  }
+  },
+
+  TextAnimationP() {
+    const textArray = "Portfolio".split("")
+    return <Wrapper>
+            {textArray.map((item, index) => (
+                <span key={index}>{item}</span>
+            ))}
+           </Wrapper>
+}
 }
 
 export default funcs

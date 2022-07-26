@@ -11,7 +11,7 @@ const animation = keyframes`
 const Wrapper = styled.span`
   opacity: 0;
   animation-name: ${animation};
-  animation-duration: 6s;
+  animation-duration: 12s;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
   background: -webkit-linear-gradient(right, #e066ff, #4747d1, #2193b0, #6dd5ed);

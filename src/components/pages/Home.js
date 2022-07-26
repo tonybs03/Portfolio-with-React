@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.css';
 import home from '../assets/images/home.png'
-// import Divider from '@mui/material/Divider';
+// import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 export default function Home() {
   return (

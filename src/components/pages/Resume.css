@@ -62,10 +62,46 @@
 }
 
 .skillssection {
-  border: 3px solid black;
   width: 50%;
   margin: auto;
+  margin-top: 90px;
+  text-align: center;
 }
+
+.icons {
+  padding: 10px;
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 70%;
+  margin:auto;
+}
+
+.icon-card {
+  background-color: rgba(241, 184, 241, 0.3);
+  justify-content: center;
+  display: flex;
+  padding: 4%;
+  border-radius: 10px;
+  margin: 20px 10px auto;
+  width: 25%;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.icon-card:hover {
+  padding: 2%;
+  box-shadow: 0px 0px 20px rgb(226, 85, 179);
+}
+
+.iconimg {
+  width: 90%;
+}
+
+
 
 .aboutmetext {
   text-align: justify;
@@ -89,24 +125,22 @@
 }
 
 @media screen and (max-width: 1024px){
-  .aboutmemain {
+  .resumemain {
     text-align: center;
   }
-
-  .aboutmebody {
+  .resumebody {
     width: 90%;
   }
-  .aboutmetext {
-    align-items: center;
-    width: 100%;
-    padding-right: 0px;
-  }
-  .aboutmeimg {
-    margin-bottom: 50px;
-    width: 50%;
-  }
-  .aboutmesection {
+  .resumesection {
     display: block;
+  }
+  .resumePDF {
+    width: 100%;
+  }
+  .skillssection {
+    width: 100%;
+    margin-top: -30px;
+    margin-bottom: 30px;
   }
 }
 

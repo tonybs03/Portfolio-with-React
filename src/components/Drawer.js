@@ -8,7 +8,10 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
+import HomeIcon from '@mui/icons-material/Home';
+import AppRegistrationIcon from '@mui/icons-material/AppRegistration';
+import ArticleIcon from '@mui/icons-material/Article';
+import InfoIcon from '@mui/icons-material/Info';
 import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom'
@@ -43,7 +46,11 @@ export default function TemporaryDrawer() {
           <ListItem key={page} disablePadding >
             <ListItemButton>
               <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                {index === 0 ? <HomeIcon color='primary'/> : <span></span>}
+                {index === 1 ? <InfoIcon color='primary'/> : <span></span>}
+                {index === 2 ? <AppRegistrationIcon color='primary'/> : <span></span>}
+                {index === 3 ? <ArticleIcon color='primary'/> : <span></span>}
+                {index === 4 ? <MailIcon color='primary'/> : <span></span>}
               </ListItemIcon>
               <Link to={page}> <ListItemText primary={page} primaryTypographyProps={{ style: { fontFamily: 'Rajdhani', fontSize: "24px", fontWeight: "bolder" } }} /> </Link>
             </ListItemButton>
@@ -62,7 +69,7 @@ export default function TemporaryDrawer() {
           <Drawer
             PaperProps={{
               sx: {
-                backgroundColor: "rgba(60, 35, 84, 0.5)",
+                backgroundColor: "rgba(60, 35, 84, 0.7)",
                 borderRadius: "0 30px 30px 0"
               }
             }}
