@@ -38,8 +38,9 @@ function App() {
                 <div>
                     <TopHeader />
                     <Routes>
-                        <Route exact path='/home' element={<Home />}></Route>
+                        <Route path='/home' element={<Home />}></Route>
                         <Route exact path='/' element={<Home />}></Route>
+                        <Route path='/Portfolio-with-React/' element={<Home />}></Route>
                         <Route path='/About%20Me' element={<About />} ></Route>
                         <Route path='/Portfolio' element={<Portfolio />} ></Route>
                         <Route path='/Contact' element={<Contact />}></Route>
