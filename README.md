@@ -3,9 +3,11 @@
   ![MIT](https://img.shields.io/badge/license-MIT-green)
 
 ## Description
-This is my first attempt at making a Text Editor.
+This is my first attempt at making a React.js based portfolio.
 
 ![This is an image](SS.png)
+
+[CLICK HERE](https://www.loom.com/share/2c03c635bced4526aa279d3ea1bfe3e2) to visit the live site. 
 
 ## Table of Contents
 - [Installation](#installation)
@@ -27,9 +29,8 @@ Please use the following installation instructions in your terminal:
 
 Please use the following command line in your terminal to initiate:
 
-```npm run build```
 
-```npm run start:dev```
+```npm run start```
 
 
 ## Contribution Guidelines <a name="contributing"></a>
