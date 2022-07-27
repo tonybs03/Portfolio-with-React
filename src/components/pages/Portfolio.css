@@ -76,19 +76,21 @@
 }
 
 .links {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
+  display: block;
+  justify-content: center;
+  margin-bottom: 30px;
   padding-left: 10%;
   padding-right: 10%;
 }
 
 .projectbtn {
+  margin-top: 20px;
+  width: 70%;
   background-color: #8e566d;
   border-radius: 50px;
   border: none;
   color: white;
-  padding: 10px 12px;
+  padding: 2px 3px;
   text-align: center;
   text-decoration: none;
   font-size: 15px;
@@ -104,6 +106,12 @@
 
 @media screen and (max-width: 1024px){
   .portfoliobody {
-    width: 90%;
+    width: 95%;
+  }
+  .singleproject {
+    width: 45%;
+  }
+  .singleproject:hover {
+    width: 49%;
   }
 }

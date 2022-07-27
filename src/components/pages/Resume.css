@@ -101,29 +101,6 @@
   width: 90%;
 }
 
-
-
-.aboutmetext {
-  text-align: justify;
-  font-size: 21px;
-  width: 60%;
-  margin:0px auto;
-  padding-right: 70px;
-}
-
-.aboutmeimg {
-  position: relative;
-  width: 40%;
-  margin:auto;
-  box-shadow: 5px 5px 3px rgb(0,0,0,0.5);
-}
-
-.purpletextsmall {
-  color: rgba(234, 150, 226, 0.979);
-  font-size: 27px;
-  font-weight: bolder;
-}
-
 @media screen and (max-width: 1024px){
   .resumemain {
     text-align: center;
@@ -167,9 +144,4 @@
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-}
-
-.aboutmeimg:hover .overlay {
-  bottom: 0;
-  height: 100%;
 }
