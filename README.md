@@ -7,7 +7,7 @@ This is my first attempt at making a React.js based portfolio.
 
 ![This is an image](SS.png)
 
-[CLICK HERE](https://www.loom.com/share/2c03c635bced4526aa279d3ea1bfe3e2) to visit the live site. 
+[CLICK HERE](https://tonybs03.github.io/Portfolio-with-React/) to visit the live site. 
 
 ## Table of Contents
 - [Installation](#installation)
