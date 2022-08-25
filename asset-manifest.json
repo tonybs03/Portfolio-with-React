@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/Portfolio-with-React/static/css/main.98004ea7.css",
-    "main.js": "/Portfolio-with-React/static/js/main.0b77e512.js",
+    "main.js": "/Portfolio-with-React/static/js/main.371a5da7.js",
     "static/media/halo.png": "/Portfolio-with-React/static/media/halo.6640566091aa99eef1aa.png",
     "pdf.worker.js": "/Portfolio-with-React/e7e915313973ba1d49f9bb2a1998626e.js",
     "static/media/PP.jpg": "/Portfolio-with-React/static/media/PP.8903a92b611798cb501f.jpg",
     "static/media/home.png": "/Portfolio-with-React/static/media/home.de62e474acdcbd6cda31.png",
-    "static/media/tonyfan.pdf": "/Portfolio-with-React/static/media/tonyfan.77ce3f0ad1046f65aab1.pdf",
+    "static/media/tonyfan.pdf": "/Portfolio-with-React/static/media/tonyfan.c6face333e02feba390f.pdf",
     "static/media/project4.png": "/Portfolio-with-React/static/media/project4.f5c8e04128b80431c8ce.png",
     "static/media/project5.png": "/Portfolio-with-React/static/media/project5.af4844d467587e662b2c.png",
     "static/media/project2.png": "/Portfolio-with-React/static/media/project2.55c166f7b62f9ae94c49.png",
@@ -27,10 +27,10 @@
     "static/media/mysql.png": "/Portfolio-with-React/static/media/mysql.e27a74cedbee3a41652f.png",
     "index.html": "/Portfolio-with-React/index.html",
     "main.98004ea7.css.map": "/Portfolio-with-React/static/css/main.98004ea7.css.map",
-    "main.0b77e512.js.map": "/Portfolio-with-React/static/js/main.0b77e512.js.map"
+    "main.371a5da7.js.map": "/Portfolio-with-React/static/js/main.371a5da7.js.map"
   },
   "entrypoints": [
     "static/css/main.98004ea7.css",
-    "static/js/main.0b77e512.js"
+    "static/js/main.371a5da7.js"
   ]
 }
