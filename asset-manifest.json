@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/Portfolio-with-React/static/css/main.98004ea7.css",
-    "main.js": "/Portfolio-with-React/static/js/main.53bf6b3c.js",
+    "main.js": "/Portfolio-with-React/static/js/main.0b77e512.js",
     "static/media/halo.png": "/Portfolio-with-React/static/media/halo.6640566091aa99eef1aa.png",
     "pdf.worker.js": "/Portfolio-with-React/e7e915313973ba1d49f9bb2a1998626e.js",
     "static/media/PP.jpg": "/Portfolio-with-React/static/media/PP.8903a92b611798cb501f.jpg",
     "static/media/home.png": "/Portfolio-with-React/static/media/home.de62e474acdcbd6cda31.png",
     "static/media/tonyfan.pdf": "/Portfolio-with-React/static/media/tonyfan.77ce3f0ad1046f65aab1.pdf",
     "static/media/project4.png": "/Portfolio-with-React/static/media/project4.f5c8e04128b80431c8ce.png",
+    "static/media/project5.png": "/Portfolio-with-React/static/media/project5.af4844d467587e662b2c.png",
     "static/media/project2.png": "/Portfolio-with-React/static/media/project2.55c166f7b62f9ae94c49.png",
     "static/media/project3.png": "/Portfolio-with-React/static/media/project3.097e3efecb5f73d8e43e.png",
     "static/media/project0.png": "/Portfolio-with-React/static/media/project0.85d26e0f9e1923d8fa12.png",
     "static/media/tonyfan.jpg": "/Portfolio-with-React/static/media/tonyfan.62475805a8147a4e6cb8.jpg",
     "static/media/rd.png": "/Portfolio-with-React/static/media/rd.98ce8104e04b83cdec84.png",
     "static/media/project1.png": "/Portfolio-with-React/static/media/project1.e0b88b35b7fdd2699cbc.png",
-    "static/media/project5.png": "/Portfolio-with-React/static/media/project5.1a05412827c172565462.png",
     "static/media/react.png": "/Portfolio-with-React/static/media/react.192e6dd16ac0b3df9eac.png",
     "static/media/node.png": "/Portfolio-with-React/static/media/node.0fd8c5a7867d0f7d577e.png",
     "static/media/jq.png": "/Portfolio-with-React/static/media/jq.c0debadfaeb7d46565b5.png",
@@ -27,10 +27,10 @@
     "static/media/mysql.png": "/Portfolio-with-React/static/media/mysql.e27a74cedbee3a41652f.png",
     "index.html": "/Portfolio-with-React/index.html",
     "main.98004ea7.css.map": "/Portfolio-with-React/static/css/main.98004ea7.css.map",
-    "main.53bf6b3c.js.map": "/Portfolio-with-React/static/js/main.53bf6b3c.js.map"
+    "main.0b77e512.js.map": "/Portfolio-with-React/static/js/main.0b77e512.js.map"
   },
   "entrypoints": [
     "static/css/main.98004ea7.css",
-    "static/js/main.53bf6b3c.js"
+    "static/js/main.0b77e512.js"
   ]
 }
